@@ -93,7 +93,7 @@ where not exists(
     select
       *
     from employee b
-    where b.salary > a.salary
+    where b.salary > a.salary -- 우리가 뽑을 자
 );
 
 
