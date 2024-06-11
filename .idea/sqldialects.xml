@@ -4,7 +4,12 @@
     <file url="file://$PROJECT_DIR$/00_DB_SCRIPT_EMPLOYEE.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/01_SELECT_HW.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/02_ORDER_BY_HW.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/03._2_SELECT_WHERE.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/03_WHERE_HW.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/04_SELECT_WHERE.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/04_DISTINCT_PRACTICE.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/05_LIMIT_PRACTICE.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/06_JOIN_PRACTICE.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/07_GROUPING_PRACTICE.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/08.SUBQUERIES_PRACTICE.sql" dialect="MySQL" />
   </component>
 </project>
