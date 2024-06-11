@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/00_DB_SCRIPT_EMPLOYEE.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/01_SELECT_HW.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/02_ORDER_BY_HW.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/03_WHERE_HW.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/04_SELECT_WHERE.sql" dialect="MySQL" />
+  </component>
+</project>
