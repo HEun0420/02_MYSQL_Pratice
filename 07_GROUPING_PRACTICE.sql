@@ -1,7 +1,7 @@
 -- EMPLOYEE 테이블에서 JOB_CODE별 평균 급여를 조회하시오.
 select
     job_code,
-    avg(salary)
+    avg(salary) as avg_salary
 from employee
 group by
     job_code;
@@ -10,7 +10,7 @@ group by
 -- EMPLOYEE 테이블에서 SAL_LEVEL별 최소 급여를 조회하시오.
     select
         sal_level,
-        min(salary)
+        min(salary) as min_salary
     from employee
     group by
         sal_level;
@@ -19,7 +19,7 @@ group by
 -- EMPLOYEE 테이블에서 DEPT_CODE별 직원 수를 조회하되, 직원 수가 3명 이상인 부서만 조회하시오.
 select
     dept_code,
-    count(*)
+    count(*) as emp_count
 from employee
 group by
     dept_code
@@ -31,7 +31,7 @@ having
 
     select
         job_code,
-        avg(salary)
+        avg(salary) as avg_salary
     from employee
     group by job_code
     having
@@ -41,7 +41,7 @@ having
 select
     dept_code,
     job_code,
-    sum(salary)
+    sum(salary) as total_salary
 from employee
 group by dept_code, job_code
 with rollup;

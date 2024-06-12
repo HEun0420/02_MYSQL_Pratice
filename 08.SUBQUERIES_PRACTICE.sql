@@ -79,9 +79,9 @@ select
 from department a
 where exists(
     select
-        count(*)
+        1
     from employee
-    where dept_code= a.dept_title
+    where dept_code= a.dept_id
           );
 
 -- EMPLOYEE 테이블에서 급여가 가장 높은 직원의 이름과 급여를 조회하시오. (NOT EXISTS 사용)
@@ -102,7 +102,7 @@ where not exists(
 -- 평균 급여가 4000000 이상인 부서의 부서명과 평균 급여를 조회하시오.
 with menucate as (
     select
-        avg(salary),
+        avg(salary) as avg_salary,
         b.dept_title
     from employee a
     inner join department b
@@ -113,3 +113,17 @@ with menucate as (
 select
     *
 from menucate;
+
+WITH DeptAvgSalary AS (
+    SELECT
+        DEPT_CODE,
+        AVG(SALARY) AS AvgSalary
+    FROM EMPLOYEE
+    GROUP BY DEPT_CODE
+)
+SELECT
+    D.DEPT_TITLE, DAS.AvgSalary
+FROM DeptAvgSalary DAS
+         JOIN DEPARTMENT D
+             ON DAS.DEPT_CODE = D.DEPT_ID
+WHERE DAS.AvgSalary >= 4000000;

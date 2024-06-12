@@ -19,4 +19,4 @@ select
     distinct dept_code, job_code
 from
     employee
-order by dept_code;
+order by dept_code,job_code;
