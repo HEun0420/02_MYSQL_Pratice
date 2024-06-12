@@ -35,4 +35,4 @@ select
 from employee a
 join employee b
 on a.manager_id = b.emp_id
-order by emp_name;
+order by a.emp_name;
